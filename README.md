@@ -30,6 +30,11 @@ func main(){
     time.Sleep(time.Second)
     broadcaster.Unsubscribe(3)
     broadcaster.Publish("Goodbye!")
+    // [New Message]: Hello!
+    // Do not disturb!
+    // [New Message]: Hello!
+    // [New Message]: Goodbye!
+    // [New Message]: Goodbye!
 }
 ```
 
