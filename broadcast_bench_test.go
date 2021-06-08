@@ -18,11 +18,9 @@ func benchmarkBroadcaster(j int, b *testing.B){
 	go brdcstr.Start()
 
 
-	go func() {
-		for i := 0; i < j; i++ {
-			brdcstr.Publish("Hello!")
-		}
-	}()
+	for i := 0; i < j; i++ {
+		brdcstr.Publish("Hello!")
+	}
 }
 
 func BenchmarkBroadcaster100(b *testing.B) { benchmarkBroadcaster(100, b) }
