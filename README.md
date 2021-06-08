@@ -42,10 +42,10 @@ func main(){
 # Benchmarks
 ```json
 pkg: github.com/sneakykiwi/go-broadcast
-cpu: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
-BenchmarkBroadcaster100-6       1000000000
-BenchmarkBroadcaster500-6       1000000000
-BenchmarkBroadcaster1000-6      1000000000
+cpu: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+BenchmarkBroadcaster100-2    	1000000000	         0.0000240 ns/op
+BenchmarkBroadcaster500-2    	1000000000	         0.0001136 ns/op
+BenchmarkBroadcaster1000-2   	1000000000	         0.0002386 ns/op
 PASS
-ok      github.com/sneakykiwi/go-broadcast      1.289s
+ok  	github.com/sneakykiwi/go-broadcast	1.026s
 ```
