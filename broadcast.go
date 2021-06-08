@@ -49,7 +49,7 @@ func (b *Broadcaster) Start() {
 		b.cond.Wait()
 		go func() {
 			for _, f := range b.subscribers {
-				f(b.message) // publishes the message
+				go f(b.message) // publishes the message
 			}
 		}()
 		b.cond.L.Unlock()
