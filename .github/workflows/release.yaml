@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Benchmarks
         working-directory: .
-        run: go test -benc=.
+        run: go test -bench=.
