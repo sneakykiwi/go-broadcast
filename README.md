@@ -6,7 +6,7 @@ to how `Redis Pub/Sub` works.
 The module has 100% versatility as it is able to accept all types of callbacks, you could use this for publishing any sorts
 of events to all subscribed goroutines. 
 
-**No channels used**
+**<h3>No channels used</h3>**
 
 # Examples
 
