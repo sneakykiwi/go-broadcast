@@ -8,6 +8,8 @@ of events to all subscribed goroutines.
 
 **<h3>No channels used</h3>**
 
+<i>It should not be used by an excessive amount of goroutines</i>
+
 # Examples
 
 ```go
